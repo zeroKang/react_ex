@@ -5,6 +5,7 @@ import HelloBox from './components/HelloBox';
 import CountBoard from './components/day1/CountBoard';
 import CountComponent from './components/day1/CountComponent';
 import CountHookComponent from './components/day1/CountHookComponent';
+import QuizComponent from './components/quiz/QuizComponent';
 
 function App() {
 
@@ -12,6 +13,8 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+
+        <QuizComponent></QuizComponent>
         
         <CountHookComponent></CountHookComponent>
 
