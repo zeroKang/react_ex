@@ -2,6 +2,9 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import HelloBox from './components/HelloBox';
+import CountBoard from './components/day1/CountBoard';
+import CountComponent from './components/day1/CountComponent';
+import CountHookComponent from './components/day1/CountHookComponent';
 
 function App() {
 
@@ -9,8 +12,9 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <HelloBox></HelloBox>
+        
+        <CountHookComponent></CountHookComponent>
+
         <a
           className="App-link"
           href="https://reactjs.org"

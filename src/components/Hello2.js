@@ -16,11 +16,11 @@ class Hello2 extends Component{
 
     render() {
         return(
-            <>
+            <div className='box'>
             <Hello2Sub value= {this.state.count}></Hello2Sub>
             <button onClick= {this.handleClick} > + </button>
             <button > - </button>
-            </>
+            </div>
         )
     }
 
