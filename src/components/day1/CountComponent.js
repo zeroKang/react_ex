@@ -4,8 +4,8 @@ import CountButton from './CountButton'
 
 class CountComponent extends Component {
 
-    constructor(){
-        super()
+    constructor(props){
+        super(props)
         this.state = {count: 1}
     }
 

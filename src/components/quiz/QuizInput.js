@@ -2,6 +2,8 @@ import React, {useState} from 'react'
 
 const QuizInput = ({fn}) => {
 
+    const jquery = window.$
+
     const [text, setText] = useState('')
 
     const hanleChange = (e) => {
@@ -11,13 +13,16 @@ const QuizInput = ({fn}) => {
 
     const handleClick = () => {
         console.log("click")
+
+        console.log(jquery("#uInput"))
+
         fn(text)
         setText('')
     }
 
     return (
         <div>
-            <input type='text' onChange= {hanleChange}  value = {text} ></input>
+            <input id="uInput" type='text' onChange= {hanleChange}  value = {text} ></input>
             <button onClick= {handleClick}>확인</button>
         </div>
     )
