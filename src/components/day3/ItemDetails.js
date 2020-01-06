@@ -1,11 +1,12 @@
 import React, {useState} from 'react'
 
-const ItemDetails = ({pno,pname,price, amount}) => {
+const ItemDetails = ({pno,pname,price, amount, changeItem}) => {
 
     const [amountValue, setAmountValue] = useState(amount)
 
     const handleChange = (e) => {
         setAmountValue(e.target.value)
+        changeItem()
     }
 
     return (

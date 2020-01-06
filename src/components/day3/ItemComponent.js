@@ -12,10 +12,14 @@ const ItemComponent = () => {
         {pno:5, pname:"05", price: 7000, amount: 0},
     ]
 
+    const changeItem = () => {
+        console.log("changeItem.....")
+    }
+
     return(
         <div>
             <h1>Item Component</h1>
-            <ItemList arr ={items}></ItemList>
+            <ItemList arr = {items} changeItem = {changeItem}></ItemList>
             <hr></hr>
             <ItemTotal></ItemTotal>
         </div>
