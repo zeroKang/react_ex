@@ -8,6 +8,8 @@ import CountHookComponent from './components/day1/CountHookComponent';
 import QuizComponent from './components/quiz/QuizComponent';
 import ExInput from './components/refs/ExInput';
 import ExInputHook from './components/refs/ExInputHook';
+import LoopEx from './components/day3/LoopEx';
+import ItemComponent from './components/day3/ItemComponent';
 
 function App() {
 
@@ -31,6 +33,9 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <ItemComponent></ItemComponent>
+
+        <LoopEx></LoopEx>
 
         <ExInput></ExInput>
         <ExInput></ExInput>
