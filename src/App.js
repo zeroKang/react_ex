@@ -6,6 +6,8 @@ import CountBoard from './components/day1/CountBoard';
 import CountComponent from './components/day1/CountComponent';
 import CountHookComponent from './components/day1/CountHookComponent';
 import QuizComponent from './components/quiz/QuizComponent';
+import ExInput from './components/refs/ExInput';
+import ExInputHook from './components/refs/ExInputHook';
 
 function App() {
 
@@ -29,6 +31,9 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+
+        <ExInput></ExInput>
+        <ExInput></ExInput>
 
         <QuizComponent arr={arr1}></QuizComponent>
 
