@@ -12,8 +12,21 @@ const ItemComponent = () => {
         {pno:5, pname:"05", price: 7000, amount: 0},
     ]
 
-    const changeItem = () => {
-        console.log("changeItem.....")
+    const [total, setTotal] = useState(0)
+
+    const changeItem = (pno, amount) => {
+        console.log("changeItem.....", pno, amount)
+        const target = items.filter(item => item.pno === pno )[0]
+        console.log(target)
+        target.amount = parseInt(amount)
+        console.log(items)
+
+        let sum = 0;
+        items.forEach(item => {
+            sum += item.amount * item.price
+        })
+        setTotal(sum)
+        
     }
 
     return(
@@ -21,7 +34,7 @@ const ItemComponent = () => {
             <h1>Item Component</h1>
             <ItemList arr = {items} changeItem = {changeItem}></ItemList>
             <hr></hr>
-            <ItemTotal></ItemTotal>
+            <ItemTotal total = {total}></ItemTotal>
         </div>
     )
 }

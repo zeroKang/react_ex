@@ -1,9 +1,9 @@
 import React from 'react'
 
-const ItemTotal = (props) => {
+const ItemTotal = ({total}) => {
     return(
         <div>
-            <h3>TOTAL</h3>
+            <h3>TOTAL: {total}</h3>
         </div>
     )
 }

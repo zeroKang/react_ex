@@ -6,7 +6,7 @@ const ItemDetails = ({pno,pname,price, amount, changeItem}) => {
 
     const handleChange = (e) => {
         setAmountValue(e.target.value)
-        changeItem()
+        changeItem(pno, e.target.value )
     }
 
     return (
