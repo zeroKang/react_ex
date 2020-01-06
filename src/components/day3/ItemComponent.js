@@ -5,11 +5,11 @@ import ItemTotal from './ItemTotal'
 const ItemComponent = () => {
 
     const items = [
-        {pno:1, pname:"01", price: 3000},
-        {pno:2, pname:"02", price: 4000},
-        {pno:3, pname:"03", price: 5000},
-        {pno:4, pname:"04", price: 6000},
-        {pno:5, pname:"05", price: 7000},
+        {pno:1, pname:"01", price: 3000, amount: 0},
+        {pno:2, pname:"02", price: 4000, amount: 0},
+        {pno:3, pname:"03", price: 5000, amount: 0},
+        {pno:4, pname:"04", price: 6000, amount: 0},
+        {pno:5, pname:"05", price: 7000, amount: 0},
     ]
 
     return(

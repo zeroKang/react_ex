@@ -1,8 +1,9 @@
 import React from 'react'
+import ItemDetails from './ItemDetails'
 
 const ItemList = ({arr}) => {
 
-    const lis = arr.map(({pno,pname,price}) => <li key={pno} > {pname} {price}</li>)
+    const lis = arr.map( item => <ItemDetails {...item}></ItemDetails>)
 
     return(
         <ul>
